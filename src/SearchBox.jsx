@@ -5,8 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 export default function SearchBox({updateInfo}) {
     let [city , setCity] = useState("");
-    const API_URL = "https://api.openweathermap.org/data/2.5/weather";
-    const API_KEY = "dfe679dc6d2f6181abfdd4a28a7248c1";
+    const API_URL = "";
+    const API_KEY = "";
     let getWeatherInfo = async (city) => {
         let response = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
         let jsonResponse = await response.json();
